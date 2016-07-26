@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的收藏课程</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'> -->
+	<script src="dist/jquery/dist/jquery.min.js"></script>
+	<script src="dist/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="favorite">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="panel_info">
+					<p>理财课开课了 <span>2016-08-25</span></p>
+					<div class="carousel-info">
+						<img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+						<div class="pull-left">
+							<p class="testimonials-name">小吉老师</p>
+							<span class="testimonials-post">小吉老师的精彩讲座</span>
+						</div>
+						<div class="right_icon">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="panel-heading">
+				<span class="red">1000</span><span>人听过</span>
+				<span class="float_right"><b class="red">5.0</b> 好评</span>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+  $(".panel-body").each(function(index) {
+    $(this).click(function() {
+      location.href = "curriculum_info.html"
+    });
+  });
+</script>
+</html>

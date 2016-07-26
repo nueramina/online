@@ -1,7 +1,418 @@
+/* 首页 */
 .header{
     width: 100%;
     height: 50px;
     background-color: grey;
     color: white;
+    padding: 10px;
 }
 
+.row{
+	margin-right: 0;
+	margin-left: 0;
+}
+.header a{
+	color: #fff;
+}
+
+.sr-input {
+    border: medium none;
+    border-radius: 4px 0 0 4px;
+    box-shadow: none;
+    color: #8a8a8a;
+    float: left;
+    height: 30px;
+    width: 70%;
+    padding: 0 8px;
+}
+.sr-btn {
+    background: none repeat scroll 0 0 #217FF1;
+    border: medium none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    height: 30px;
+    padding: 0 20px;
+}
+
+.user_position{
+	position: absolute;
+	top:15px;
+	right: 8px;
+}
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px}
+
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+.card ul li{width: 20%;text-align: center;}
+
+.panel_info span{
+	float: right;
+}
+
+.carousel-info img {
+    border: 1px solid #f5f5f5;
+    border-radius: 150px !important;
+    height: 75px;
+    padding: 3px;
+    width: 75px;
+}
+.carousel-info {
+    overflow: hidden;
+}
+.carousel-info img {
+    margin-right: 10px;
+}
+.carousel-info span {
+    display: block;
+}
+.right_icon{
+	margin-top: 32px;
+	margin-right: 10px;
+}
+
+.testimonials-name {
+    color: #e6400c;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 23px 0 7px;
+}
+.testimonials-post {
+    color: #656565;
+    font-size: 12px;
+}
+.red{
+	color: #e6400c;
+}
+.yellow{
+	color: yellow;
+}
+
+.float_right{
+	float: right;
+}
+
+/* 我的主页 */
+.user_info_head{
+	background-color: #217FF1;
+	width: 100%;
+	height: 180px;
+	text-align: center;
+	padding: 10px 0;
+	color: #fff;
+}
+
+.user_info_head img{
+		border: 1px solid #f5f5f5;
+    border-radius: 150px !important;
+    height: 75px;
+    padding: 3px;
+    width: 75px;
+}
+
+.user_info_head p{
+	padding: 2px 0;
+}
+
+.user_info_head a{
+	color: #fff;
+	padding: 2px 10px;
+	border:1px solid #fff;
+	border-radius: 10px;
+	font-size: 1.1em;
+}
+
+.user_info_head a:hover{
+	color: #fff;
+}
+
+.user_info_nav ul{
+	list-style: none;
+	color: #217FF1;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.user_info_nav ul li{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	text-align: center;
+	border: 1px solid #f4f4f4;
+	box-shadow:3px 3px 6px 0 #eee;
+}
+
+.user_info_nav ul li b{
+	font-size: 1.1em;
+}
+
+.user_info_list{
+	margin-top: 3px;
+}
+
+.user_info_list ul{
+	list-style: none;
+	color: #666;
+	padding: 10px;
+}
+
+.user_info_list ul li{
+	border: 1px solid rgba(0,0,0,0.05);
+	border-radius: 5px; 
+	padding:12px 8px; 
+	margin: 10px 0; 
+	box-shadow:2px 2px 2px 0 #ddd;
+}
+
+.back_index{
+	margin-top: 25px;
+	text-align: center;
+}
+
+.back_index a{
+	padding: 5px 55px;
+	color: #fff;
+	font-size: 1.1em;
+	background-color: #217FF1;
+	box-shadow:3px 3px 6px 0 rgba(33,127,241,0.8); 
+
+}
+
+.back_index a:hover{
+	color: #fff;
+}
+
+.zero_opacity{
+	opacity: 0;
+}
+
+/*我的名片*/
+.card_edit_head{
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #217FF1;
+	color: #fff;
+}
+
+.card_edit_head img{
+	border: 1px solid #f5f5f5;
+  border-radius: 150px !important;
+  height: 75px;
+  padding: 3px;
+  width: 75px;
+}
+
+.card_info form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+.card_info form input {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 80%;
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  transition-duration: 0.25s;
+  font-weight: 300;
+}
+.card_info form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.card_info form input:focus {
+  background-color: white;
+  width: 85%;
+  color: green;
+}
+
+.card_info label{
+ 	margin-left: 10%;
+}  
+.card_info form button {
+  appearance: none;
+  outline: 0;
+  width: 80% !important;
+	margin-left:10%;
+  background-color: #217FF1;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+}
+.card_info form button:hover {
+  background-color: rgba(33,127,241,0.9);
+}
+
+/*购买会员*/
+.vip_list{
+	padding: 12px 0 10px 0;
+	background-color: #f4f4f4;
+	text-align: center;
+	 margin-bottom: 10px; 
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.vip_list p{
+	padding-top: 3px;
+	font-weight: bold;
+}
+
+.vip_list a{
+	padding: 2px 10px;
+	background-color: #217FF1;
+	color: #fff;
+}
+
+.vip_list a:hover{
+	color: #fff;
+}
+
+.class_record{
+	padding: 10px;
+}
+
+.center{
+	padding-left: 25px;
+}
+
+.go_evaluate a{
+	color: #fff;
+	background-color: #217FF1;
+	margin-top: -6px;
+	margin-right: 0 !important;
+}
+
+.go_evaluate a:hover{
+	color: #fff;
+}
+
+.favorite{
+	padding: 10px;
+}
+
+.my_creat{
+	padding: 10px;
+}
+
+/*课程简介*/
+.curriculum_title p{
+	padding: 8px 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.curriculum h4{
+	padding:5px 15px;
+	color: #555;
+	font-size: 1.1em;
+	line-height: 22px;
+}
+
+.curriculum p{
+	color: #555;
+}
+
+.curriculum_info{
+	padding: 10px;
+}
+
+.curriculum_head img{
+	border: 1px solid #f5f5f5;
+  border-radius: 150px !important;
+  height: 75px;
+  padding: 3px;
+  width: 75px;
+}
+
+.curriculum_join ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.curriculum_join ul li{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.curriculum_join ul li a{
+	padding: 5px 25px;
+	background-color: #217FF1;
+	color: #fff;
+}
+
+.curriculum_join ul li a:hover{
+	color: #fff;
+}
+
+.evaluate{
+	padding: 10px;
+	margin-top: 38px;
+
+}
+.s_evaluate{
+	border-bottom: 1px solid #eee;
+}
+
+.s_evaluate h4{
+	color: red;
+	padding-top: 10px;
+}
+.s_evaluate h4 span{
+	color: #999;
+}
+
+.s_evaluate img{
+	border: 1px solid #f5f5f5;
+  border-radius: 150px !important;
+  height: 75px;
+  padding: 3px;
+  width: 75px;
+}
+
+.my_evaluate{
+	margin: 20px auto;
+	text-align: center;
+}
+.my_evaluate textarea{
+	min-width: 90%;
+	max-width: 90%;
+	text-align: left;
+	padding: 10px;
+}
+
+.my_evaluate h4{
+	margin-top: 20px;
+	color: #555;
+}
+
+.my_evaluate .starrr{
+	font-size: 2em;
+}
+
+.my_evaluate button{
+	padding: 5px 25px;
+}
+
+.fa-star{
+	color: orange !important;
+}

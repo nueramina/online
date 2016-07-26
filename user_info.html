@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的主页</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'> -->
+  <script src="dist/jquery/dist/jquery.min.js"></script>
+  <script src="dist/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="user_info_head">
+			<img src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" alt="">
+			<p>GIpro_小吉</p>
+			<a href="by_vip.html" class="btn">购买VIP</a>
+			<!-- VIP学员 -->
+			<!-- 
+			<p class="yellow">VIP学员</p>
+			<b>2017-01-01 到期</b>
+			 -->
+		</div>
+
+		<div class="user_info_nav">
+			<ul>
+				<li onclick="record()">
+					<b>0</b>
+					<p>听课记录</p>
+				</li>
+				<li onclick="favorite()">
+					<b>0</b>
+					<p>收藏课程</p>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 老师的主页 -->
+		<!-- <div class="user_info_nav">
+			<ul>
+				<li>
+					<b>0</b>
+					<p>发布的课</p>
+				</li>
+				<li>
+					<b class="zero_opacity">0</b>
+					<p>创建课程</p>
+				</li>
+			</ul>
+		</div> -->
+	</div>
+
+	<div class="user_info_list">
+			<ul>
+				<li id="myCard"><span class="glyphicon glyphicon-list-alt red"></span> 我的名片</li>
+				<li><span class="glyphicon glyphicon-education red"></span> 我的课堂</li>
+			</ul>
+	</div>
+
+
+
+	<div class="back_index">
+		<a href="index.html" class="btn">返回首页</a>	
+	</div>
+	
+</body>
+
+<script>
+	$("#myCard").click(function() {
+		location.href = "my_card.html";
+	});
+
+
+	function record(){
+		location.href = "class_record.html";
+	}
+
+	function favorite(){
+		location.href = "favorite.html";
+	}
+
+
+</script>
+</html>
