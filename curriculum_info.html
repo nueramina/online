@@ -21,7 +21,7 @@
 		<div class="curriculum_info">
 			<div class="panel panel-default">
 				<div class="panel-heading curriculum_head">
-					<img src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left" alt="">
+					<img src="images/img1-small.jpg" class="pull-left" alt="">
 					<div>
 						<p class="testimonials-name">小吉BOB老师</p>
 						<span class="testimonials-post">小吉BOB老师的精彩讲座</span>
@@ -39,17 +39,17 @@
 			<div class="curriculum_join">
 				<ul>
 					<li>
-						<a href="" class="btn">
+						<a href="room.html" class="btn">
 							<span class="glyphicon glyphicon-headphones"></span>
 							立即收听
 						</a>
 					</li>
 
 					<li>
-						<a href="" class="btn">
+						<button class="btn" id="collect">
 							<span class="glyphicon glyphicon-star-empty"></span>
 							立即收藏
-						</a>
+						</button>
 					</li>
 				</ul>
 			</div>
@@ -60,7 +60,7 @@
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<div class="s_evaluate">
-						<img src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left" alt="">
+						<img src="images/img1-small.jpg" class="pull-left" alt="">
 						<h4>GIpro_小吉 <span class="float_right">2016-08-08</span></h4>
 						<p>bob老师讲的好好哦！bob老师讲的好好哦！bob老师讲的好好哦！</p>
 						<div class="row lead">
@@ -70,17 +70,27 @@
 					</div>
 
 					<div class="s_evaluate">
-						<img src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left" alt="">
+						<img src="images/img1-small.jpg" class="pull-left" alt="">
 						<h4>GIpro<span class="float_right">2016-08-08</span></h4>
 						<p>bob老师讲的好好哦！</p>
 						<div class="row lead">
         			<div id="stars" class="starrr float_right"></div>
         			<!-- <span id="count">0</span> -->
+
 						</div>
 					</div>
 			</div>
 		</div>
 	</div>
+	</div>
 </body>
 <script src="js/star_ratings.js"></script>
+
+<script>
+	$("#collect").click(function() {
+		alert("收藏成功");
+		$(this).html("收藏成功");
+		$(this).attr('disabled', 'true');
+	});
+</script>
 </html>

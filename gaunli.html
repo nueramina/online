@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课程角色管理</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="dist/jquery/dist/jquery.min.js"></script>
+	<script src="dist/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="classmates">
+		<div class="row">
+    <div class="">
+      <div class="card">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#All" aria-controls="All" role="tab" data-toggle="tab">管理员</a>
+          </li>
+
+          <li role="presentation">
+            <a href="#blackList" aria-controls="blackList" role="tab" data-toggle="tab">黑名单</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="All">
+              <div class="panel-body">
+               <div class="panel_info">
+                <div class="carousel-info">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
+                  <div class="pull-left">
+                    <p class="testimonials-name">小吉先知</p>
+                    <span class="label label-me">读书</span>
+                    <span class="label label-me">金融</span>
+                    <span class="label label-me">CEO</span>
+                  </div>
+                  <div class="right_icon float_right">
+                    	<button class="btn  btn-danger btn-xs">删除</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+           <div class="panel-body">
+               <div class="panel_info">
+                <div class="carousel-info">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
+                  <div class="pull-left">
+                    <p class="testimonials-name">小吉</p>
+                    <span class="label label-me">读书</span>
+                    <span class="label label-me">金融</span>
+                    <span class="label label-me">CEO</span>
+                  </div>
+                  <div class="right_icon float_right">
+                    	<button class="btn  btn-danger btn-xs">删除</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="add">
+            <a href="rule.html"><span class="glyphicon glyphicon-plus-sign"></span> 添加管理员</a>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="blackList">
+          <div class="panel-body">
+               <div class="panel_info">
+                <div class="carousel-info">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
+                  <div class="pull-left">
+                    <p class="testimonials-name">小吉</p>
+                    <span class="label label-me">读书</span>
+                    <span class="label label-me">金融</span>
+                    <span class="label label-me">CEO</span>
+                  </div>
+                  <div class="right_icon float_right">
+                    	<button class="btn btn-danger btn-xs">删除</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="add" hidden>
+            <a href="rule.html"><span class="glyphicon glyphicon-plus-sign"></span> 添加管理员</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

@@ -15,9 +15,10 @@
 <body>
 	<div class="row">
 		<div class="user_info_head">
-			<img src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" alt="">
+			<img src="images/img1-small.jpg" alt="">
 			<p>GIpro_小吉</p>
 			<a href="by_vip.html" class="btn">购买VIP</a>
+ 
 			<!-- VIP学员 -->
 			<!-- 
 			<p class="yellow">VIP学员</p>
@@ -39,40 +40,43 @@
 		</div>
 
 		<!-- 老师的主页 -->
-		<!-- <div class="user_info_nav">
+		<div class="user_info_nav" hidden>
 			<ul>
-				<li>
+				<li onclick="myCreat()">
 					<b>0</b>
 					<p>发布的课</p>
 				</li>
-				<li>
+				<li onclick="creatClass()">
 					<b class="zero_opacity">0</b>
 					<p>创建课程</p>
 				</li>
 			</ul>
-		</div> -->
+		</div>
 	</div>
 
 	<div class="user_info_list">
 			<ul>
 				<li id="myCard"><span class="glyphicon glyphicon-list-alt red"></span> 我的名片</li>
-				<li><span class="glyphicon glyphicon-education red"></span> 我的课堂</li>
+				<li id="myFriend"><span class="glyphicon glyphicon-education red"></span> 我的课友</li>
 			</ul>
 	</div>
 
 
 
-	<div class="back_index">
+	<!-- <div class="back_index">
 		<a href="index.html" class="btn">返回首页</a>	
-	</div>
+	</div> -->
 	
 </body>
 
 <script>
 	$("#myCard").click(function() {
-		location.href = "my_card.html";
+		location.href = "register.html";
 	});
 
+	$("#myFriend").click(function() {
+		location.href = "my_friend.html";
+	});
 
 	function record(){
 		location.href = "class_record.html";
@@ -82,6 +86,13 @@
 		location.href = "favorite.html";
 	}
 
+	function creatClass(){
+		location.href = "creat_class.html";
+	}
+
+	function myCreat() {
+		location.href = "my_creat.html";
+	}
 
 </script>
 </html>

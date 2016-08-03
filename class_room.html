@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GIpro_小吉老师的股票行情分析课</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="dist/jquery/dist/jquery.min.js"></script>
+	<script src="dist/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="col-md-12 col-xs-12 class_head">
+		
+		<!-- <div class="col-md-12 col-xs-12">
+			<a href="gaunli.html" class="btn  btn-primary btn-xs">课程角色管理</a>
+		</div> -->
+
+		<div class="col-md-4 col-xs-4">
+			<a href="curriculum_info.html" class="btn  btn-primary btn-xs">查看课程详情</a>
+		</div>
+		
+		<div class="col-md-4 col-xs-4">
+			<a href="listner.html"  class="btn  btn-primary btn-xs">10 人听课</a>
+		</div>
+		
+		<div class="col-md-4 col-xs-4">
+			<a href="share.html" class="btn  btn-primary btn-xs">分享</a>
+		</div>
+	</div>	
+	<div class="list-chat">
+    <ul class="chat">
+      <li>
+        <img src="images/img1-small.jpg">
+        <div class="message">同学们好！</div>
+      </li>
+      <li>
+        <img src="images/img1-small.jpg">
+        <div class="message">GIpro老师好！GIpro老师好！GIpro老师好！GIpro老师好！GIpro老师好！GIpro老师好！GIpro老师好！GIpro老师好！GIpro老师好！GIpro老师好！</div>
+      </li>
+      
+      <li>
+        <img src="images/img1-small.jpg">
+        <div class="message current">......</div>
+      </li>
+    </ul>
+
+    <div class="meta-bar chat">
+    	<input class="nostyle chat-input" type="text" placeholder="Message..." />
+     	<i class="glyphicon glyphicon-send"></i>
+     	<a href="classmates.html">交换名片</a>
+    </div>
+		
+		<!-- 游客身份 -->
+    <div class="meta-bar chat" hidden>
+    	<ul>
+    		<li id="goBy">购买此课程</li>
+    		<li id="byVip">购买VIP</li>
+    	</ul>
+    </div>
+
+		<!-- 老师的 -->
+		<div class="meta-bar chat laoshi" hidden>
+			<i class="fa fa-volume-up fa-2x"></i>
+			<input class="nostyle chat-input" type="text" placeholder="Message..." />
+			<i class="fa fa-at fa-2x"></i>
+			<i class="fa fa-picture-o fa-2x"></i>
+		</div>
+  </div>
+</body>
+
+<script>
+	$("#goBy").click(function() {
+		location.href = "go_by.html";
+	});
+	
+	$("#byVip").click(function() {
+		location.href = "by_vip.html";
+	});
+	
+</script>
+</html>

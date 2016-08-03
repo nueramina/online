@@ -20,7 +20,7 @@
           <input type="text" class="sr-input" placeholder="请输入课程名称">
           <button class="btn btn-sm sr-btn" type="button"><i class="fa fa-search"></i></button>
         </div>
-        </form>
+      </form>
     </div>
     <div class="col-md-1 col-xs-1 user_position">
       <a href="user_info.html"><span class="glyphicon glyphicon-user"></span></a>
@@ -52,6 +52,14 @@
           </li>
         </ul>
 
+        <div class="order">
+          <ul>
+            <li class="active">发布时间</li>
+            <li>收听数</li>
+            <li>课程好评</li>
+          </ul>
+        </div>
+        
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="All">
             <div class="panel panel-default">
@@ -59,7 +67,7 @@
                <div class="panel_info">
                 <p>股票分析课开课了 <span>2016-08-25</span></p>
                 <div class="carousel-info">
-                  <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
                   <div class="pull-left">
                     <p class="testimonials-name">BOB老师</p>
                     <span class="testimonials-post">股神bob的精彩讲座</span>
@@ -81,7 +89,7 @@
                <div class="panel_info">
                 <p>理财课开课了 <span>2016-08-25</span></p>
                 <div class="carousel-info">
-                  <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
                   <div class="pull-left">
                     <p class="testimonials-name">小吉老师</p>
                     <span class="testimonials-post">小吉老师的精彩讲座</span>
@@ -106,7 +114,7 @@
                <div class="panel_info">
                 <p>财经分析课开课了 <span>2016-08-25</span></p>
                 <div class="carousel-info">
-                  <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
                   <div class="pull-left">
                     <p class="testimonials-name">小吉老师</p>
                     <span class="testimonials-post">小吉老师的精彩讲座</span>
@@ -130,7 +138,7 @@
                <div class="panel_info">
                 <p>股票分析课开课了 <span>2016-08-25</span></p>
                 <div class="carousel-info">
-                  <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
                   <div class="pull-left">
                     <p class="testimonials-name">BOB老师</p>
                     <span class="testimonials-post">股神bob的精彩讲座</span>
@@ -154,7 +162,7 @@
                <div class="panel_info">
                 <p>理财课开课了 <span>2016-08-25</span></p>
                 <div class="carousel-info">
-                  <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
                   <div class="pull-left">
                     <p class="testimonials-name">小吉老师</p>
                     <span class="testimonials-post">股神bob的精彩讲座</span>
@@ -178,7 +186,7 @@
                <div class="panel_info">
                 <p>英语课开课了 <span>2016-08-25</span></p>
                 <div class="carousel-info">
-                  <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+                  <img alt="" src="images/img1-small.jpg" class="pull-left">
                   <div class="pull-left">
                     <p class="testimonials-name">小英老师</p>
                     <span class="testimonials-post">小英的精彩讲座</span>
@@ -206,6 +214,15 @@
   $(".tab-pane").each(function(index) {
     $(this).click(function() {
       location.href = "curriculum_info.html"
+    });
+  });
+
+
+  $(".order > ul > li").each(function(index) {
+    $(this).click(function() {
+      $(this).prevAll("li").removeClass('active');
+      $(this).nextAll("li").removeClass('active');
+      $(this).addClass('active');
     });
   });
 </script>

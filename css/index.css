@@ -2,7 +2,7 @@
 .header{
     width: 100%;
     height: 50px;
-    background-color: grey;
+    background-color: #333;
     color: white;
     padding: 10px;
 }
@@ -48,8 +48,11 @@
 .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
 .tab-pane { padding: 15px 0; }
 .tab-content{padding:20px}
-
-.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+.order{text-align: center;margin:10px 0;}
+.order ul{list-style: none;margin:0 20px;padding: 0;}
+.order ul li{display: inline-block;float: left;text-align: center; width: 33.3% !important;border-right: 1px solid #fff; background-color: rgba(0,0,0,0.1);color: #666;padding: 8px 0;}
+.order ul li.active {background-color: #219FFF;color: #fff;}
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px;}
 .card ul li{width: 20%;text-align: center;}
 
 .panel_info span{
@@ -225,7 +228,7 @@
   padding: 8px 15px;
   margin: 0 auto 10px auto;
   display: block;
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   color: #333;
   transition-duration: 0.25s;
@@ -238,6 +241,22 @@
   background-color: white;
   width: 85%;
   color: green;
+}
+
+.card_info form textarea{
+	appearance: none;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 80%;
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  transition-duration: 0.25s;
+  font-weight: 300;
 }
 
 .card_info label{
@@ -364,6 +383,17 @@
 	color: #fff;
 }
 
+.curriculum_join ul li button{
+	padding: 5px 25px;
+	background-color: #217FF1;
+	color: #fff;
+	border: none;
+}
+
+.curriculum_join ul li button:hover{
+	color: #fff;
+}
+
 .evaluate{
 	padding: 10px;
 	margin-top: 38px;
@@ -416,3 +446,282 @@
 .fa-star{
 	color: orange !important;
 }
+
+
+/*在线教室*/
+.class_head{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	line-height: 50px;
+	background-color: #000;
+	text-align: center;
+	z-index: 10;
+}
+
+.class_head a{
+	color: #fff;
+	font-size: small;
+}
+
+.class_head a:hover{
+	text-decoration: none;
+}
+
+.list-chat {
+  height: 100%;
+}
+
+.list-chat .meta-bar {
+  border-bottom: 1px solid #7daefe;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+
+.list-chat .meta-bar.chat {
+  border-top: 1px solid lightgrey;
+  background-color: #217FF1;
+  color: #fff;
+  border-bottom: none;
+  position: absolute;
+  bottom: 0;
+}
+
+.meta-bar.chat a{
+	position: absolute;
+	right: 5px;
+	top: 30%;
+	border-left: 1px solid #f4f4f4;
+	margin-left: 3px;
+	padding-left: 3px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.meta-bar.chat ul{
+	list-style: none;
+}
+
+.meta-bar.chat ul li{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.2em;
+	text-align: center;
+	border-right: 1px solid #fff;
+}
+
+ul.chat {
+  width: 100%;
+  padding: 0;
+}
+ul.chat li {
+  padding: 15px 10px 0 10px;
+  display: inline-flex;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  transition: all 0.18s ease-in;
+  position: relative;
+}
+ul.chat li img {
+  height: 42px;
+  width: 42px;
+  border-radius: 100%;
+}
+ul.chat li .message {
+  padding: 10px 10px 10px 15px;
+  font-size: 0.9em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  min-width: 50%;
+  max-width: 75%;
+  margin: 0 10px;
+  position: relative;
+  background: white;
+  border-radius: 5px;
+ 	color: #666;
+}
+ul.chat li .message:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent white;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -8px;
+  top: 3px;
+}
+ul.chat li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+ul.chat li:nth-child(even) .message {
+  background-color: #f5f5f5;
+}
+ul.chat li:nth-child(even) .message:after {
+  right: -8px;
+  left: auto;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent #f5f5f5;
+}
+
+input.nostyle {
+  border: 1px solid #fff;
+  width: 70%;
+  margin: 5px;
+  padding: 12px;
+  background-color:#fff;
+  color: #666;
+  border-radius: 10px;
+  outline: none;
+}
+
+.classmates .card ul li{
+	width: 50%;text-align: center;
+}
+
+.classmates .tab-content{
+	padding:0px;
+}
+
+.classmates .tab-pane {
+ padding: 0; 
+}
+
+.classmates .panel-body{
+ border-bottom: 1px solid #ccc;
+}
+
+.pull-left span{
+	margin-right: 5px;
+}
+
+
+.go_by .panel{
+	margin: 10px 5px;
+}
+
+.go_by_footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-top: 2px solid #f4f4f4;
+}
+
+.go_by_footer .go_pay{
+	background-color: #217FF1;
+	color: #fff;
+}
+
+.listner .panel-body{
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.friend_card_head{
+	background-color: #217FF1;
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	padding: 10px 0;
+	color: #fff;
+}
+
+.friend_card_head img{
+		border: 1px solid #f5f5f5;
+    border-radius: 150px !important;
+    height: 75px;
+    padding: 3px;
+    width: 75px;
+}
+
+.friend_card_head p{
+	padding: 2px 0;
+}
+
+.friend_card_info ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.friend_card_info ul li{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #f4f4f4;
+	padding:0 15px;
+	color: #666;
+}
+
+.green{
+	color: #217FF1;
+}
+
+.my_friend .panel-body{
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.add{
+	margin: 20px 0;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.add a{
+	text-decoration: none;
+}
+
+.label-me{
+	color: #666;
+	padding: 2px 4px;
+	border:1px solid #999;
+	border-radius: 5px;
+}
+
+.laoshi input{
+	width: 60%;
+}
+
+.laoshi i{
+	width: 10%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mask .modal-dialog{
+	margin: auto;
+	margin-top: 40%;
+	width: 250px;
+}
+
+.mask .modal-dialog p{
+	padding: 25px;
+	text-align: center;
+	color: #217FF1;
+}
+
+.mask .modal-dialog .empty{
+	width: 100%;
+	border-top: 1px solid #f4f4f4;
+}
+
+.mask .modal-dialog h5{
+	text-align: center;
+	color: #666;
+}
+
+.modal-footer button{
+	margin: auto;
+}
+

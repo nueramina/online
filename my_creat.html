@@ -19,7 +19,7 @@
 				<div class="panel_info">
 					<p>理财课开课了 <span>2016-08-25</span></p>
 					<div class="carousel-info">
-						<img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+						<img alt="" src="images/img1-small.jpg" class="pull-left">
 						<div class="pull-left">
 							<p class="testimonials-name">小吉老师</p>
 							<span class="testimonials-post">小吉老师的精彩讲座</span>
@@ -37,4 +37,12 @@
 		</div>
 	</div>
 </body>
+
+<script>
+	$(".panel").each(function() {
+		$(this).click(function() {
+			location.href = "class_room.html";
+		});
+	});
+</script>
 </html>
